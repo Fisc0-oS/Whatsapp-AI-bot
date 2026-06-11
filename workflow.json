@@ -271,7 +271,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "http://192.168.178.45:11434/api/chat",
+        "url": "http://YOUR_HOST_IP:11434/api/chat",
         "sendBody": true,
         "specifyBody": "json",
         "jsonBody": "={{ JSON.stringify($json.ollama_payload) }}",
@@ -337,13 +337,13 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "https://192.168.178.45:27124/vault/Reservations/{{ $json.reservation.date }}_{{ $json.reservation.name }}.md",
+        "url": "https://YOUR_HOST_IP:27124/vault/Reservations/{{ $json.reservation.date }}_{{ $json.reservation.name }}.md",
         "sendHeaders": true,
         "headerParameters": {
           "parameters": [
             {
               "name": "Authorization",
-              "value": "Bearer d47eef9065054117318e4d114775c6a56ef42f90f919c07a6cc13015fc4021d5"
+              "value": "Bearer YOUR_OBSIDIAN_API_KEY"
             },
             {
               "name": "Content-Type",
@@ -384,13 +384,13 @@
     },
     {
       "parameters": {
-        "url": "https://192.168.178.45:27124/vault/Reservations/",
+        "url": "https://YOUR_HOST_IP:27124/vault/Reservations/",
         "sendHeaders": true,
         "headerParameters": {
           "parameters": [
             {
               "name": "Authorization",
-              "value": "Bearer d47eef9065054117318e4d114775c6a56ef42f90f919c07a6cc13015fc4021d5"
+              "value": "Bearer YOUR_OBSIDIAN_API_KEY"
             }
           ]
         },
@@ -437,7 +437,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "http://192.168.178.45:11434/api/chat",
+        "url": "http://YOUR_HOST_IP:11434/api/chat",
         "sendBody": true,
         "specifyBody": "json",
         "jsonBody": "={{ JSON.stringify($json.ollama_payload) }}",
@@ -484,7 +484,7 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "http://192.168.178.45:11434/api/chat",
+        "url": "http://YOUR_HOST_IP:11434/api/chat",
         "sendBody": true,
         "specifyBody": "json",
         "jsonBody": "={{ JSON.stringify($json.ollama_payload) }}",
@@ -518,13 +518,13 @@
     {
       "parameters": {
         "method": "POST",
-        "url": "http://172.17.0.1:3000/api/sendText",
+        "url": "http://YOUR_DOCKER_BRIDGE_IP:3000/api/sendText",
         "sendHeaders": true,
         "headerParameters": {
           "parameters": [
             {
               "name": "X-Api-Key",
-              "value": "mypassword123"
+              "value": "YOUR_WAHA_API_KEY"
             }
           ]
         },
@@ -902,7 +902,7 @@
   },
   "versionId": "0a1bb74a-e1a9-4011-8803-563726eee6d2",
   "meta": {
-    "instanceId": "0c2cb9a356bd8a1d659012ebd9e69f01206cc0d0aba8e40544e6cfb876bb645a"
+    "instanceId": ""
   },
   "nodeGroups": [],
   "id": "N3tgJlFQhmv5ehQB",
